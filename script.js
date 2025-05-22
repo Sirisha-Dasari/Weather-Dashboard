@@ -1,5 +1,5 @@
 
-const API_KEY = '9100680e29c1bcc8833176d4c6b084eb';
+const API_KEY = 'your_api_key';
 
 
 let tempUnit = 'metric';

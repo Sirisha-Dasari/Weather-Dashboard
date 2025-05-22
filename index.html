@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+            <button id="location-btn" title="Get current location"><i class="fas fa-map-marker-alt"></i></button>
+        </div>
+
+        <div class="error-container" id="error-container"></div>
+
+        <div class="weather-container" id="weather-container">
+            <div class="current-weather">
+                <h2 id="city-name"></h2>
+                <div class="weather-info">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <div class="temperature">
+                        <h3 id="temperature"></h3>
+                        <p id="weather-description"></p>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="detail">
+                        <span>Feels like</span>
+                        <p id="feels-like"></p>
+                    </div>
+                    <div class="detail">
+                        <span>Humidity</span>
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="detail">
+                        <span>Wind</span>
+                        <p id="wind"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="forecast-title">5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
